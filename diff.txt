@@ -1,0 +1,9 @@
+  const handleFinish = (value) => {
+    let obj = {};
+    for (const x in init) {
+      if (init[x] !== value[x]) {
+        obj[x] = value[x];
+      }
+    }
+    console.log(obj);
+  };
